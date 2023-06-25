@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Labsheet02</title>
+    </head>
+    <body>
+        <script>
+            let today = new Date();
+            let time = today.getHours();
+
+            if(time<10){
+                window.alert("Good Morning");
+            }
+            else if(time<20){
+                window.alert("Good day");
+            }
+            else{
+                window.alert("Good evening");
+            } 
+
+            document.write(today);
+        </script>
+    </body>
+</html>

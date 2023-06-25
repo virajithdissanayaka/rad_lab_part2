@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise</title>
+    </head>
+    <body>
+        <label>Enter 1st Number:</label><br>
+        <input type="number" id="value1"><br>
+        <label>Enter 2nd Number:</label><br>
+        <input type="number" id="value2"><br>
+        <label>Enter 3rd Number:</label><br>
+        <input type="number" id="value3"><br><br>
+        <input type="submit" name="submit" onclick="findMax()">
+
+        <script>
+            function findMax(){
+                let num1 = document.getElementById("value1").value;
+                let num2 = document.getElementById("value2").value;
+                let num3 = document.getElementById("value3").value;
+                let max=num1;
+                
+                if(num2>num1){
+                    if(num3>num2){
+                        max=num3;
+                        window.alert(max);
+                    }
+                    else{
+                        max=num2;
+                        window.alert(max);
+                    }
+                }
+                else if(num3>num1){
+                    max=num3;
+                    window.alert(max);
+                }
+                else{
+                    window.alert(max);
+                }
+                
+                
+            }
+        </script>
+    </body>
+</html>
