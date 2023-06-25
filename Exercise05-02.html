@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise</title>
+    </head>
+    <body>
+        <label>Enter Day:</label><br>
+        <input type="text" placeholder="enter text" id="value"><br><br>
+        <input type="submit" name="submit" onclick="getColor()" value="Try IT">
+
+        <script>
+            function getColor(){
+                let fruit = document.getElementById("value").value;
+                switch(fruit){
+                    case "banana":
+                        alert("Yellow");
+                        break
+                    case "pineapple":
+                        alert("Orange");
+                        break
+                    case "apple":
+                        alert("Green");
+                }
+            }
+        </script>
+    </body>
+</html>
